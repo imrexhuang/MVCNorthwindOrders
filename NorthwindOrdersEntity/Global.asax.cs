@@ -19,5 +19,11 @@ namespace NorthwindOrdersEntity
 
             log4net.Config.XmlConfigurator.Configure();
         }
+
+        protected void Application_BeginRequest()
+        {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("zh-TW");
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("zh-TW");
+        }
     }
 }
