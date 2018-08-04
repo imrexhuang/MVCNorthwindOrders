@@ -1,4 +1,4 @@
-﻿@model IPagedList<NorthwindOrdersEntity.ViewModels.OrderPocViewModel>
+﻿@model IEnumerable<NorthwindOrdersEntity.ViewModels.OrderPocViewModel>
 
 <!DOCTYPE html>
 
@@ -14,28 +14,28 @@
     <table class="table">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().OrderID)
+                @Html.DisplayNameFor(model => model.OrderID)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().ProductID)
+                @Html.DisplayNameFor(model => model.ProductID)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().CustomerID)
+                @Html.DisplayNameFor(model => model.CustomerID)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().EmployeeID)
+                @Html.DisplayNameFor(model => model.EmployeeID)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().ShipName)
+                @Html.DisplayNameFor(model => model.ShipName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().ShipAddress)
+                @Html.DisplayNameFor(model => model.ShipAddress)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().UnitPrice)
+                @Html.DisplayNameFor(model => model.UnitPrice)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Quantity)
+                @Html.DisplayNameFor(model => model.Quantity)
             </th>
             <th></th>
         </tr>

@@ -46,7 +46,7 @@ namespace NorthwindOrdersEntity.Controllers
                             ProductID = od.ProductID,
                             UnitPrice = od.UnitPrice,
                             Quantity = od.Quantity,
-                        }).OrderBy( x => x.OrderID).ToPagedList(currentPageIndex, defaultPageSize);
+                        }).OrderBy( x => x.OrderID).ToPagedList(currentPageIndex, defaultPageSize).AsEnumerable();
 
             return View(order);
         }
